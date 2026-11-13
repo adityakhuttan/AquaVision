@@ -12,7 +12,15 @@ This repository currently contains the **Stage A fish segmenter** (YOLO11s-seg) 
 | `training/AquaVision_Segmenter_Training_3h.ipynb` | Colab notebook that trains and tests both arms (baseline and AquaVision recipe) |
 | `MODEL_PERFORMANCE.md` | Current results vs baseline |
 
-> Datasets, `work.zip` and the `runs/` folder are **not** stored here (too large). Model weights are shared separately.
+> Datasets, `work.zip` and the `runs/` folder are **not** stored here (too large). They are shared on Google Drive: [AquaVision Drive folder](https://drive.google.com/drive/folders/1F9lfpk4dnecJD7Ij0WMkg3XigpVQv9cz). Model weights are shared separately.
+
+## Dataset (Google Drive)
+
+The data (`work.zip` and related files) is hosted here, not in this repo:
+
+**[AquaVision Drive folder](https://drive.google.com/drive/folders/1F9lfpk4dnecJD7Ij0WMkg3XigpVQv9cz)**
+
+To use it with the Colab notebook, keep `work.zip` in your own Drive under `MyDrive/aquavision/` (open the folder link, then **Add shortcut to Drive** or copy the file).
 
 ## Datasets
 
@@ -72,7 +80,7 @@ r = model.predict("frame.jpg", imgsz=640, conf=0.25)[0]
 
 ## Reproducing the training
 
-1. Run the data preparation notebook and save `work.zip` to Google Drive under `MyDrive/aquavision/`.
+1. Run the data preparation notebook and save `work.zip` to Google Drive under `MyDrive/aquavision/`, or get the prepared data from the [shared Drive folder](https://drive.google.com/drive/folders/1F9lfpk4dnecJD7Ij0WMkg3XigpVQv9cz).
 2. Open `training/AquaVision_Segmenter_Training_3h.ipynb` in Colab (Runtime > Change runtime type > T4 GPU).
 3. Run all cells. Finished arms are skipped and interrupted arms are resumed if Colab disconnects.
 
