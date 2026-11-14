@@ -1,0 +1,7 @@
+ultralytics==8.4.212
+opencv-python==5.0.0.93
+numpy>=2,<3
+pandas>=2.2,<4
+Pillow>=10,<13
+lap==0.5.14
+typed-argument-parser==1.12.0
