@@ -1,0 +1,52 @@
+{
+ "classifier": {
+  "pytorch_fp32": {
+   "size_mb": 11.09,
+   "latency_ms": 54.56,
+   "top1": 0.9872,
+   "macro_f1": 0.9399
+  },
+  "onnx_fp32": {
+   "size_mb": 21.9,
+   "latency_ms": 36.36,
+   "top1": 0.9872,
+   "macro_f1": 0.9399
+  },
+  "onnx_int8": {
+   "size_mb": 5.78,
+   "latency_ms": 16.76,
+   "top1": 0.9861,
+   "macro_f1": 0.9381
+  }
+ },
+ "detector": {
+  "pytorch_fp32": {
+   "size_mb": 20.5,
+   "latency_ms": 321.0,
+   "box_mAP50": 0.6643,
+   "box_mAP50_95": 0.3902,
+   "mask_mAP50": 0.6695
+  },
+  "onnx_fp32": {
+   "size_mb": 40.56,
+   "latency_ms": 366.9,
+   "box_mAP50": 0.7245,
+   "box_mAP50_95": 0.4301,
+   "mask_mAP50": 0.7148
+  },
+  "onnx_int8_full": {
+   "size_mb": 10.86,
+   "latency_ms": 160.3,
+   "box_mAP50": 0.0,
+   "box_mAP50_95": 0.0,
+   "mask_mAP50": 0.0
+  },
+  "onnx_int8_head_fp32": {
+   "size_mb": 15.18,
+   "latency_ms": 238.5,
+   "box_mAP50": 0.7198,
+   "box_mAP50_95": 0.4208,
+   "mask_mAP50": 0.7118
+  }
+ }
+}
