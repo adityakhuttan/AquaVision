@@ -4,8 +4,7 @@ Fish **detection, segmentation, tracking-based counting, relative length and spe
 from a single (monocular) camera on an autonomous underwater vehicle (AUV). Two trained models, a
 Gradio web dashboard and an offline Windows desktop app.
 
-> **Project:** AI Lab, School of Engineering and Applied Science, Ahmedabad University (application track).
-> The full write-up is in `report/AquaVision_Final_Report.tex`, with the slides in `report/AquaVision_Final_Presentation.tex`.
+> **Project:** AI Lab, School of Engineering and Applied Science, Ahmedabad University (application track)..
 
 ---
 
@@ -45,7 +44,6 @@ frame ──► YOLO11s-seg (boxes + masks, class "fish")
 | `training/` | **Kaggle** notebooks: `train_segmenter_kaggle.ipynb` (detector baseline), `train_seg_aug.ipynb` (augmented detector runs A–D), `train_classifier_kaggle.ipynb` (classifier baseline), `train_cls_aug.ipynb` (augmented classifier). `train_aug_config.py` holds the online augmentation and two-phase training. |
 | `evaluation/` | `eval_seg.py` (shared detector evaluation: per dataset, clean/turbid, recall by fish size, precision), `cls_local_test/` (ensemble, flip and unknown-species evaluation: `make_brackish_crops.py` → `cls_predict.py` → `cls_analyse.py`), `quant_local_test/` (INT8 benchmark: `quant_bench.py`, results JSON) |
 | `dashboard/` | `Web_Dashboard.ipynb` (Gradio), `desktop_app/` (offline Windows Tkinter app: `pipeline.py`, `desktop_app.py`, `setup_windows.bat`, `run.bat`, tests, `samples/`; `weights/` holds the model files, which are not in git) |
-| `report/` | Final report and slides (LaTeX), `figures/`, and `make_final_figures.py` |
 | `MODEL_PERFORMANCE.md` | Detailed results and run history |
 
 Datasets, prepared splits and run folders are too large for the repo; they are shared on Google
